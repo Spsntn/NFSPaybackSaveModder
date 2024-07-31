@@ -1,3 +1,6 @@
+# **SPECIAL THANKS**
+### A big thank you to the HTO community for their support and for providing a dedicated channel for the project. You can join their Discord server for further discussions, questions, and suggestions: [![HTO Discord](https://img.shields.io/badge/Discord-HTO-7289da.svg)](https://discord.gg/fHfmjaCXtb)
+
 # We need your help!!!
 As an open-source project, any help from experienced Java developers to develop, improve, or fix the program is greatly appreciated. The better the program becomes, the easier it will be for players to reach and enhance their save files at higher levels, thus increasing their enjoyment.
 
@@ -32,5 +35,5 @@ Here is a tutorial on how to use it in case it's too difficult:
 
 
 ## References
-For any questions or further information, you can contact me on Discord
+For any questions or further information, you can send a message on the HTO Server!
 
