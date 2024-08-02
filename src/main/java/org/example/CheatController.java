@@ -10,6 +10,7 @@ public class CheatController {
 	NosController nosContr = new NosController();
 	ArchetypeController archCont = new ArchetypeController();
     CarController carContr = new CarController();
+    PlateController plateContr = new PlateController();
 
     LiveTunController liveContr = new LiveTunController();
 	
@@ -28,6 +29,7 @@ public class CheatController {
             System.out.println("\u001B[34m2)" + ANSI_RESET+ " Archetype mod");
             System.out.println("\u001B[34m3)" + ANSI_RESET+ " Live Tuning mod");
             System.out.println("\u001B[34m4)" + ANSI_RESET+ " Car Swap mod");
+            System.out.println("\u001B[34m5)" + ANSI_RESET+ " Plate Swap mod");
             System.out.println("\u001B[34m9)" + ANSI_RESET+ " Exit & Save");
             System.out.print("Select an option: ");
             int choice = scanner.nextInt();
@@ -48,6 +50,9 @@ public class CheatController {
                     break;
                 case 4:
                     hexString = carContr.carSelection(hexString);
+                    break;
+                case 5:
+                    hexString = plateContr.plateSelection(hexString);
                     break;
                 default:
                     System.out.println("\n\u001B[31;1mInvalid Option.\u001B[0m");
