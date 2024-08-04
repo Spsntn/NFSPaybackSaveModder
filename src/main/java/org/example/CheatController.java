@@ -11,6 +11,8 @@ public class CheatController {
 	ArchetypeController archCont = new ArchetypeController();
     CarController carContr = new CarController();
     PlateController plateContr = new PlateController();
+    DiabloModController diabloContr = new DiabloModController();
+    WhiteTiresController tireContr = new WhiteTiresController();
 
     LiveTunController liveContr = new LiveTunController();
 	
@@ -30,6 +32,8 @@ public class CheatController {
             System.out.println("\u001B[34m3)" + ANSI_RESET+ " Live Tuning mod");
             System.out.println("\u001B[34m4)" + ANSI_RESET+ " Car Swap mod");
             System.out.println("\u001B[34m5)" + ANSI_RESET+ " Plate Swap mod");
+            System.out.println("\u001B[34m6)" + ANSI_RESET+ " Diablo Led mod");
+            System.out.println("\u001B[34m7)" + ANSI_RESET+ " White tire mod");
             System.out.println("\u001B[34m9)" + ANSI_RESET+ " Exit & Save");
             System.out.print("Select an option: ");
             int choice = scanner.nextInt();
@@ -53,6 +57,12 @@ public class CheatController {
                     break;
                 case 5:
                     hexString = plateContr.plateSelection(hexString);
+                    break;
+                case 6:
+                    hexString = diabloContr.diabloModder(hexString);
+                    break;
+                case 7:
+                    hexString = tireContr.tireModder(hexString);
                     break;
                 default:
                     System.out.println("\n\u001B[31;1mInvalid Option.\u001B[0m");
