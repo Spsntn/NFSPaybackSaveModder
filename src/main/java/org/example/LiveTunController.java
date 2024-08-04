@@ -15,7 +15,7 @@ public class LiveTunController {
 
     public String liveTunSel(String hexString) throws NumberFormatException, IOException {
         String off_extr = "CF B3 9F 02"; //That's the offroad-extremity code;
-        String gymk_extr = "B4 5F F7 02";//That's the heavinest of the car;
+        String gymk_extr = "F1 AB CB 02";//That's the heavinest of the car;
 
         Scanner scanner = new Scanner(System.in);
 
