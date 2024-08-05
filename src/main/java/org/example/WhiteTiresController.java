@@ -84,7 +84,7 @@ public class WhiteTiresController {
             System.out.println("\n\u001B[31m WARNING!! NO VALID TIRES FOUND TO USE THIS OPTION. ANY CHANGES WILL NOT FOUND");
         }
 
-        System.out.println("\n\u001B[34m1)" + ANSI_RESET + " All drags");
+        System.out.println("\n\u001B[34m1)" + ANSI_RESET + " All the cars with white tires");
         System.out.println("\u001B[34m9)" + ANSI_RESET + " Exit & Save");
         while (true) {
 
@@ -100,12 +100,12 @@ public class WhiteTiresController {
                 case 1:
                     hexString = replaceAll(dragFront, whiteFront, hexString);
                     hexString = replaceAll(dragRear, whiteRear, hexString);
-                    System.out.println("\nWhite Tires applied for Drags\n");
+                    System.out.println("\nWhite Tires applied for all the cars\n");
                     break;
                 default:
                     scr.clearScr();
                     scr.printTitle();
-                    System.out.println("\n\u001B[34m1)" + ANSI_RESET + " All drags");
+                    System.out.println("\n\u001B[34m1)" + ANSI_RESET + " All the cars with white tires");
                     System.out.println("\u001B[34m9)" + ANSI_RESET + " Exit & Save");
                     System.out.println("\n\u001B[31;1mInvalid Option.\u001B[0m");
             }

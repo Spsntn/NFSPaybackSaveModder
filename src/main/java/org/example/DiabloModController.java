@@ -23,11 +23,11 @@ public class DiabloModController {
         diabloParts.add("F2 5F D6 30");
 
         List<String> diabloMod = new ArrayList<>();    //List of the modded parts
-        diabloParts.add("A4 B4 80 1A");
-        diabloParts.add("46 22 2A A4");
-        diabloParts.add("D5 29 C1 31");
-        diabloParts.add("F6 F2 C4 A6");
-        diabloParts.add("84 90 09 59");
+        diabloMod.add("A4 B4 80 1A");
+        diabloMod.add("46 22 2A A4");
+        diabloMod.add("D5 29 C1 31");
+        diabloMod.add("F6 F2 C4 A6");
+        diabloMod.add("84 90 09 59");
 
 
 
@@ -54,7 +54,7 @@ public class DiabloModController {
             }
 
             if (choice == 1) {
-                for (int i = 0; i < diabloParts.size(); i++) {
+                for (int i = 0; i < diabloParts.size() - 1; i++) {
                     hexString = hexString.replace(diabloParts.get(i), diabloMod.get(i));
                 }
                 System.out.println("\nModded Diablo edit applied, press 9 then enter to save and exit\n");
