@@ -69,7 +69,7 @@ public class HeightController {
                 case 1:
                     hexString = replaceAll(visualHexes, hexVisualMod150mm, hexString);
                     hexString = replaceAll(heightHexes, hexHeightMod150mm, hexString);
-                    System.out.println("\nCocaCola plate applied\n");
+                    System.out.println("\nCars slammed succesfully\n");
                     break;
                 default:
                     scr.clearScr();
