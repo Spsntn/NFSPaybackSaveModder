@@ -53,7 +53,7 @@ public class HeightController {
             System.out.println("\n\u001B[31m WARNING!! NO VALID CODES FOUND TO USE THIS OPTION. ANY CHANGES WILL NOT FOUND");
         }
 
-        System.out.println("\n\u001B[34m1)" + ANSI_RESET + "Slam them down!!!!");
+        System.out.println("\n\u001B[34m1)" + ANSI_RESET + " Slam them down!!!!");
         System.out.println("\u001B[34m9)" + ANSI_RESET + " Exit & Save");
         while (true) {
 
@@ -69,7 +69,7 @@ public class HeightController {
                 case 1:
                     hexString = replaceAll(visualHexes, hexVisualMod150mm, hexString);
                     hexString = replaceAll(heightHexes, hexHeightMod150mm, hexString);
-                    System.out.println("\nCars slammed succesfully\n");
+                    System.out.println("\nCars slammed succesfully!!\n");
                     break;
                 default:
                     scr.clearScr();
