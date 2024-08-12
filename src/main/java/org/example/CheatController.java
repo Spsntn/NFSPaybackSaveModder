@@ -14,6 +14,8 @@ public class CheatController {
     DiabloModController diabloContr = new DiabloModController();
     WhiteTiresController tireContr = new WhiteTiresController();
     HeightController heightContr = new HeightController();
+    ManualModController manuContr = new ManualModController();
+
 
     LiveTunController liveContr = new LiveTunController();
 	
@@ -36,11 +38,12 @@ public class CheatController {
             System.out.println("\u001B[34m6)" + ANSI_RESET+ " Diablo Led mod");
             System.out.println("\u001B[34m7)" + ANSI_RESET+ " White tire mod");
             System.out.println("\u001B[34m8)" + ANSI_RESET+ " Height mod");
-            System.out.println("\u001B[34m9)" + ANSI_RESET+ " Exit & Save");
+            System.out.println("\u001B[34m9)" + ANSI_RESET+ " MANUAL MOD HEX");
+            System.out.println("\u001B[34m10)" + ANSI_RESET+ " Exit & Save");
             System.out.print("Select an option: ");
             int choice = scanner.nextInt();
 
-            if (choice == 9) {
+            if (choice == 10) {
                 break;
             }
 
@@ -68,6 +71,9 @@ public class CheatController {
                     break;
                 case 8:
                     hexString = heightContr.slamThem(hexString);
+                    break;
+                case 9:
+                    hexString = manuContr.selectMod(hexString);
                     break;
                 default:
                     System.out.println("\n\u001B[31;1mInvalid Option.\u001B[0m");
