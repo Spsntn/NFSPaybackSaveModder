@@ -58,7 +58,7 @@ public class ManualModController {
                     while (true) {
 
                         System.out.println("\nPlease insert the code you want to substitute: ");
-                        int input = scanner.nextInt();
+                        long input = scanner.nextInt();
                         String old = formatString(input);
                         if (hasValidPlates(old, hexString)) {
                             Pattern p = Pattern.compile(old);
@@ -70,7 +70,7 @@ public class ManualModController {
                             System.out.println(count);
                             System.out.println(ANSI_GREEN + ANSI_BOLD + "(✓)"+ count + " HEX FOUND SUCCESSFULLY IN THE " + ANSI_UNDERLINE + "SAVE\n" + ANSI_RESET);
                             System.out.println("\nPlease enter which code you want to replace with: ");
-                            int output = scanner.nextInt();
+                            long output = scanner.nextInt();
                             String nuovo = formatString(output);
                             hexString = hexString.replace(old, nuovo);
                             success = true;
@@ -84,7 +84,7 @@ public class ManualModController {
                     while (true) {
 
                         System.out.println("\nPlease insert the code you want to substitute: ");
-                        int input = scanner.nextInt();
+                        long input = scanner.nextInt();
                         String old = formatString(input);
                         if (hasValidPlates(old, hexString)) {
                             Pattern p = Pattern.compile(old);
@@ -96,7 +96,7 @@ public class ManualModController {
 
                             System.out.println(ANSI_GREEN + ANSI_BOLD + "\n(✓)"+ count + " HEX FOUND SUCCESSFULLY IN THE " + ANSI_UNDERLINE + "SAVE\n" + ANSI_RESET);
                             System.out.println("\nPlease enter which code you want to replace with: ");
-                            int output = scanner.nextInt();
+                            long output = scanner.nextInt();
                             String nuovo = formatString(output);
                             hexString = hexString.replaceAll(old, nuovo);
                             success = true;
@@ -133,7 +133,7 @@ public class ManualModController {
 
 
 
-    private static String formatString(int input) {
+    private static String formatString(long input) {
         String hex = String.format("%08X", input); // Converti il numero in una stringa esadecimale di lunghezza fissa
         // Verifica che la stringa abbia una lunghezza valida
         if (hex == null || hex.length() != 8) {
