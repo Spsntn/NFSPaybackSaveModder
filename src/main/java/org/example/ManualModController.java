@@ -33,7 +33,6 @@ public class ManualModController {
         boolean success = false;
 
 
-
         while (true) {
             scr.clearScr();
             scr.printTitle();
