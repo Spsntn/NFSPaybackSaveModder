@@ -58,7 +58,7 @@ public class ManualModController {
                     while (true) {
 
                         System.out.println("\nPlease insert the code you want to substitute: ");
-                        long input = scanner.nextInt();
+                        long input = scanner.nextLong();
                         String old = formatString(input);
                         if (hasValidPlates(old, hexString)) {
                             Pattern p = Pattern.compile(old);
@@ -70,7 +70,7 @@ public class ManualModController {
                             System.out.println(count);
                             System.out.println(ANSI_GREEN + ANSI_BOLD + "(✓)"+ count + " HEX FOUND SUCCESSFULLY IN THE " + ANSI_UNDERLINE + "SAVE\n" + ANSI_RESET);
                             System.out.println("\nPlease enter which code you want to replace with: ");
-                            long output = scanner.nextInt();
+                            long output = scanner.nextLong();
                             String nuovo = formatString(output);
                             hexString = hexString.replace(old, nuovo);
                             success = true;
@@ -84,7 +84,7 @@ public class ManualModController {
                     while (true) {
 
                         System.out.println("\nPlease insert the code you want to substitute: ");
-                        long input = scanner.nextInt();
+                        long input = scanner.nextLong();
                         String old = formatString(input);
                         if (hasValidPlates(old, hexString)) {
                             Pattern p = Pattern.compile(old);
@@ -96,7 +96,7 @@ public class ManualModController {
 
                             System.out.println(ANSI_GREEN + ANSI_BOLD + "\n(✓)"+ count + " HEX FOUND SUCCESSFULLY IN THE " + ANSI_UNDERLINE + "SAVE\n" + ANSI_RESET);
                             System.out.println("\nPlease enter which code you want to replace with: ");
-                            long output = scanner.nextInt();
+                            long output = scanner.nextLong();
                             String nuovo = formatString(output);
                             hexString = hexString.replaceAll(old, nuovo);
                             success = true;
